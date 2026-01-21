@@ -1,9 +1,16 @@
-matplotlib==3.4.2
-natsort==7.1.1
-numpy==1.19.2
-opencv_contrib_python==4.5.1.48
-segmentation_models_pytorch==0.2.0
-torch==1.8.1
-torchvision==0.9.1
-tqdm==4.50.2
-vcam==1.0
+# Core packages
+matplotlib>=3.6        # OK, modern version works
+natsort>=7.1.1         # no need to pin exact version
+numpy>=1.24            # modern Python 3.12 compatible
+opencv-contrib-python>=4.8.0  # latest stable opencv-contrib
+
+# Deep learning
+torch>=2.1.0           # latest stable PyTorch
+torchvision>=0.16.0    # matching torchvision for PyTorch 2.1
+segmentation-models-pytorch>=0.3.0  # newer SMP version, works with modern torch
+
+# Utilities
+tqdm>=4.65.0           # modern tqdm
+
+# Optional / custom packages
+vcam>=1.0              # keep latest
